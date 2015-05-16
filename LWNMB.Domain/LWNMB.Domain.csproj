@@ -42,6 +42,7 @@
     <Compile Include="BoardMembers.cs" />
     <Compile Include="ChairPerson.cs" />
     <Compile Include="Contracts\Event.cs" />
+    <Compile Include="Contracts\INavigation.cs" />
     <Compile Include="Contracts\ISection.cs" />
     <Compile Include="Contracts\IChairPerson.cs" />
     <Compile Include="Contracts\IBoardMembers.cs" />

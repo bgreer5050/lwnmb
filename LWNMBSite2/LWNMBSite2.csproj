@@ -240,6 +240,16 @@
     <Content Include="assets\components_vertical_tabs.html" />
     <Content Include="assets\configurator.html" />
     <Content Include="assets\content_box.html" />
+    <Content Include="Content\Images\banddrums.JPG" />
+    <Content Include="Content\Images\Choir.jpg" />
+    <Content Include="Content\Images\Choir2.JPG" />
+    <Content Include="Content\Images\colorguard.jpg" />
+    <Content Include="Content\Images\jazzband.jpg" />
+    <Content Include="Content\Images\jazzband.png" />
+    <Content Include="Content\Images\Jazzband2.JPG" />
+    <Content Include="Content\Images\Madrigals.png" />
+    <Content Include="Content\Images\Madrigals2.png" />
+    <Content Include="Content\Images\MarchingPhoenix.jpg" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap-switch.min.css" />
     <Content Include="css\bootstrap.min.css" />
@@ -695,7 +705,7 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\vTicker.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Views\Home\Index.cshtml">
+    <Content Include="Views\Home\OLDIndex.cshtml">
       <SubType>Code</SubType>
     </Content>
     <Content Include="Web.config" />
@@ -738,7 +748,7 @@
     <Content Include="Views\Home\Index - Copy.cshtml" />
     <Content Include="Views\Shared\_Layout - Copy.cshtml" />
     <Content Include="Views\Shared\_Layout2 - Copy.cshtml" />
-    <Content Include="Views\Home\Index2.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\ShowBoardPositions.cshtml" />
   </ItemGroup>

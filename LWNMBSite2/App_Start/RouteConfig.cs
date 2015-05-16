@@ -13,11 +13,11 @@ namespace LWNMBSite2
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-        "OnlyAction",
-        "{action}",
-        new { controller = "Home", action = "Index" }
-    );
+    //        routes.MapRoute(
+    //    "OnlyAction",
+    //    "{action}",
+    //    new { controller = "Home", action = "Index" }
+    //);
 
             routes.MapRoute(
                 "Default", // Route name
