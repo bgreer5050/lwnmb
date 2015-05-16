@@ -12,8 +12,9 @@ namespace LWNMB.DAL
     {
 
        public LWNMBContext()
+           : base("LWNMBContext")
        {
-           Database.SetInitializer<LWNMBContext>(new DropCreateDatabaseAlways<LWNMBContext>());
+           Database.SetInitializer<LWNMBContext>(new DropCreateDatabaseIfModelChanges<LWNMBContext>());
        }
 
         public DbSet<Event> Events  { get; set; }

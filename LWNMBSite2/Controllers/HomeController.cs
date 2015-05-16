@@ -12,23 +12,8 @@ namespace LWNMBSite2.Controllers
         public ActionResult Index()
         {
             
-            LWNMB.Domain.BoardMembers bm = new LWNMB.Domain.BoardMembers();
-            try
-            {
-                bm.EmailAddress = "test@test.com";
-                bm.FirstName = "John";
-                bm.LastName = "Doe";
-                bm.PhoneNumber = "555-555-1212";
-
-                LWNMB.DAL.LWNMBContext context = new LWNMB.DAL.LWNMBContext();
-                context.BoardMembers.Add(bm);
-                context.SaveChanges();
-            }
-            catch(Exception ex)
-            {
-                ViewBag.message = ex.Message;
-            }
-            return View(bm);
+           
+            return View();
         }
 
         public ActionResult Index2()

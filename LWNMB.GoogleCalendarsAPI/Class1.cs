@@ -74,7 +74,7 @@ namespace LWNMB.GoogleCalendarsAPI
                     lr.TimeMax = DateTime.Now.AddDays(5); //five days in the future
 
                     request = lr.Execute();
-                    http://codekicker.de/news/Retrieving-calendar-events-using-Google-Calendar-API
+                    
 
                     Console.ReadLine();
 
