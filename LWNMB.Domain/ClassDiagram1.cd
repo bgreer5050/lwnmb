@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LWNMB.Domain.Section">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAABAAAAQAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Section.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LWNMB.Domain.ChairPerson">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Section.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LWNMB.Domain.Event">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAggAAAAAAAAAAQAAACCAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LWNMB.Domain.EventDate">
+    <Position X="4.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LWNMB.Domain.Volunteer">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Volunteer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LWNMB.Domain.VolunteerOppurtunity">
+    <Position X="7" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAAgAAAgEAAAAAAAAAAAAgAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>VolunteerOppurtunity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LWNMB.Domain.WebsitePost">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEACAAAAAAAAAEAAAAAAAAEAAAAAAAAAAAAAAIBAAAA=</HashCode>
+      <FileName>WebsitePost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
