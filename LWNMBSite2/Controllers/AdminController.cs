@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LWNMB.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -23,12 +24,9 @@ namespace LWNMBSite2.Controllers
         public ActionResult ShowBoardPositions()
         {
             LWNMB.DAL.LWNMBContext db = new LWNMB.DAL.LWNMBContext();
-            LWNMB.Domain.BoardPosition bp = db.BoardPositions.Where(c => c.Title == "President").FirstOrDefault();
-
-
-            //LWNMB.Domain.BoardMembers bm = db.BoardMembers.Where(c => c.FirstName == "Cyndi").FirstOrDefault();
+            List<LWNMB.Domain.BoardMembers> members = db.BoardMembers.Include("BoardPositions").ToList();
             
-            return View(bp.BoardMember);
+            return View(members);
         }
 
 

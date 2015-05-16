@@ -14,6 +14,8 @@ namespace LWNMB.Domain
         public string LastName { get; set; }
         public string EmailAddress { get; set; }
         public string PhoneNumber { get; set; }
+
+        public virtual List<BoardPosition> BoardPositions { get; set; }
     
     }
 
@@ -26,5 +28,7 @@ namespace LWNMB.Domain
         public string Description { get; set; }
 
         public virtual BoardMembers BoardMember { get; set; }
+
+       
     }
 }

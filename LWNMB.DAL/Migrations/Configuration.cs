@@ -83,6 +83,46 @@ namespace LWNMB.DAL.Migrations
                     case "President":
                         bp.BoardMember = context.BoardMembers.Where(c => c.EmailAddress == "pijarowski3@icloud.com").FirstOrDefault();
                         break;
+
+                    case "President - Elect":
+                        bp.BoardMember = context.BoardMembers.Where(c => c.EmailAddress == "tdelegatto@msn.com").FirstOrDefault();
+                            break;
+
+
+                    case "Secretary":
+                            bp.BoardMember = context.BoardMembers.Where(c => c.EmailAddress == "Patty.Villasenor@guggenheimpartners.com").FirstOrDefault();
+                            break;
+
+
+                    case "Treasurer":
+                            bp.BoardMember = context.BoardMembers.Where(c => c.EmailAddress == "bethsteck@ameritech.net").FirstOrDefault();
+                            break;
+
+
+                    case "Treasurer - Elect":
+                            bp.BoardMember = context.BoardMembers.Where(c => c.EmailAddress == "rbmcgillivray@gmail.com").FirstOrDefault();
+                            break;
+
+
+                    case "Communications":
+                            bp.BoardMember = context.BoardMembers.Where(c => c.EmailAddress == "mbperros@comcast.net").FirstOrDefault();
+                            break;
+
+                    case "Ways-Means":
+                            bp.BoardMember = context.BoardMembers.Where(c => c.EmailAddress == "tsturino@comcast.net").FirstOrDefault();
+                            break;
+
+
+                    case "Ways-Means - Elect":
+                          bp.BoardMember = context.BoardMembers.Where(c => c.EmailAddress == "mldavis1479@sbcglobal.net").FirstOrDefault();
+                            break;
+
+                    case "Webmaster":
+                            bp.BoardMember = context.BoardMembers.Where(c => c.EmailAddress == "stevejh5@comcast.net").FirstOrDefault();
+                            break;
+                      
+                    default:
+                            break;
                 }
             }
             context.SaveChanges();
