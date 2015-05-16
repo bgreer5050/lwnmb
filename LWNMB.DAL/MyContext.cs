@@ -12,7 +12,7 @@ namespace LWNMB.DAL
     {
 
        public LWNMBContext()
-           : base("LWNMBContext")
+           : base("LWNMBContext2")
        {
            Database.SetInitializer<LWNMBContext>(new DropCreateDatabaseIfModelChanges<LWNMBContext>());
        }
@@ -27,8 +27,9 @@ namespace LWNMB.DAL
         public DbSet<VolunteerOppurtunity> VolunteerOppurtunities  { get; set; }
         public DbSet<ChairPerson> ChairPersons { get; set; }
         public DbSet<BoardMembers> BoardMembers { get; set; }
-
-
+        public DbSet<BoardPosition> BoardPositions { get; set; }
 
     }
+
+ 
 }

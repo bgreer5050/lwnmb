@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LWNMB.Domain.Contracts;
 
 namespace LWNMB.Domain
 {
-    public class BoardMembers : LWNMB.Domain.Contracts.IBoardMembers
+    public class BoardMembers : IBoardMembers
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
@@ -16,11 +17,14 @@ namespace LWNMB.Domain
     
     }
 
-    public class BoardPosition : LWNMB.Domain.Contracts.IBoardPosition
+    public class BoardPosition : IBoardPosition
     {
         public int Id { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+
         public virtual BoardMembers BoardMember { get; set; }
     }
 }

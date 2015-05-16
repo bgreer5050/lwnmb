@@ -35,10 +35,31 @@ namespace LWNMB.DAL.Migrations
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data. E.g.
             //
+
+            context.BoardPositions.AddOrUpdate(
+                p => p.Title,
+                new BoardPosition {  Title="President", Description="President of Lincoln-Way North Music Boosters", StartDate = DateTime.Parse("1/1/2014"), EndDate = DateTime.Parse("12/31/2015")},
+                new BoardPosition { Title = "President - Elect", Description = "President of Lincoln-Way North Music Boosters", StartDate = DateTime.Parse("1/1/2014"), EndDate = DateTime.Parse("12/31/2015") },
+                new BoardPosition { Title = "Secretary", Description = "President of Lincoln-Way North Music Boosters", StartDate = DateTime.Parse("1/1/2014"), EndDate = DateTime.Parse("12/31/2015") },
+                new BoardPosition { Title = "Treasurer", Description = "President of Lincoln-Way North Music Boosters", StartDate = DateTime.Parse("1/1/2014"), EndDate = DateTime.Parse("12/31/2015") },
+                new BoardPosition { Title = "Treasurer - Elect", Description = "President of Lincoln-Way North Music Boosters", StartDate = DateTime.Parse("1/1/2014"), EndDate = DateTime.Parse("12/31/2015") },
+                new BoardPosition { Title = "Communications", Description = "President of Lincoln-Way North Music Boosters", StartDate = DateTime.Parse("1/1/2014"), EndDate = DateTime.Parse("12/31/2015") },
+                new BoardPosition { Title = "Ways-Means", Description = "President of Lincoln-Way North Music Boosters", StartDate = DateTime.Parse("1/1/2014"), EndDate = DateTime.Parse("12/31/2015") },
+                new BoardPosition { Title = "Ways-Means - Elect", Description = "President of Lincoln-Way North Music Boosters", StartDate = DateTime.Parse("1/1/2014"), EndDate = DateTime.Parse("12/31/2015") },
+                new BoardPosition {  Title="Webmaster", Description="President of Lincoln-Way North Music Boosters", StartDate = DateTime.Parse("1/1/2014"), EndDate = DateTime.Parse("12/31/2015")}
+
+                );
+
+            context.SaveChanges();
+            
             context.ChairPersons.AddOrUpdate(
               p => p.FirstName,
               new ChairPerson { FirstName = "Test", LastName = "Test" }
             );
+
+
+            context.SaveChanges();
+
 
             context.BoardMembers.AddOrUpdate(
                 p=>p.EmailAddress,
@@ -54,6 +75,17 @@ namespace LWNMB.DAL.Migrations
 
                 );
 
+
+            foreach(BoardPosition bp in context.BoardPositions.ToList())
+            {
+                switch(bp.Title)
+                {
+                    case "President":
+                        bp.BoardMember = context.BoardMembers.Where(c => c.EmailAddress == "pijarowski3@icloud.com").FirstOrDefault();
+                        break;
+                }
+            }
+            context.SaveChanges();
             //LWNMB.Domain.BoardMembers bm = new LWNMB.Domain.BoardMembers();
             //try
             //{
