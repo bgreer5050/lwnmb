@@ -203,6 +203,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\CalendarsController.cs" />
+    <Compile Include="Controllers\FundraisingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -243,7 +244,9 @@
     <Content Include="Content\Images\banddrums.JPG" />
     <Content Include="Content\Images\Choir.jpg" />
     <Content Include="Content\Images\Choir2.JPG" />
-    <Content Include="Content\Images\colorguard.jpg" />
+    <Content Include="Content\Images\colorguard.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\Images\jazzband.jpg" />
     <Content Include="Content\Images\jazzband.png" />
     <Content Include="Content\Images\Jazzband2.JPG" />
@@ -352,7 +355,9 @@
     <Content Include="img\colors\blue5\logo_big.png" />
     <Content Include="img\colors\blue\logo.png" />
     <Content Include="img\colors\blue\logo50.png" />
-    <Content Include="img\colors\blue\logo_big.png" />
+    <Content Include="img\colors\blue\logo_big.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="img\colors\fuchsia\logo.png" />
     <Content Include="img\colors\fuchsia\logo50.png" />
     <Content Include="img\colors\fuchsia\logo_big.png" />
@@ -751,6 +756,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\ShowBoardPositions.cshtml" />
+    <Content Include="Views\Fundraising\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

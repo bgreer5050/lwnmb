@@ -36,6 +36,21 @@ namespace LWNMB.DAL.Migrations
             //  to avoid creating duplicate seed data. E.g.
             //
 
+            context.Events.AddOrUpdate(
+                p =>p.Name,
+                new Event {  Description="Summer Car Wash"},
+                new Event {  Description="Fish Fry"},
+                new Event {  Description="Holiday Pie Sale"},
+                new Event {  Description="Spiritwear"},
+                new Event {  Description="Scrip Card Program"},
+                new Event {  Description="Cheesecake Sale"},
+                new Event {  Description="Evergreen Sale"},
+                new Event {  Description="Fall Mum Sale"},
+                new Event {  Description="Spring Flower Sale"},
+                new Event {  Description="Princess Party"}
+
+                );
+
             context.BoardPositions.AddOrUpdate(
                 p => p.Title,
                 new BoardPosition {  Title="President", Description="President of Lincoln-Way North Music Boosters", StartDate = DateTime.Parse("1/1/2014"), EndDate = DateTime.Parse("12/31/2015")},
