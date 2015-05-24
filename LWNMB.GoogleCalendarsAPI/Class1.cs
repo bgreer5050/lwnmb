@@ -29,11 +29,14 @@ namespace LWNMB.GoogleCalendarsAPI
 
             //Create a user credential
             ClientSecrets clientSecrets = new ClientSecrets();
-            clientSecrets.ClientId = "327357483453-cset7hpghjvj6dl2pocbmoddb9gf7t54.apps.googleusercontent.com";
+            //clientSecrets.ClientId = "327357483453-cset7hpghjvj6dl2pocbmoddb9gf7t54.apps.googleusercontent.com";
+            clientSecrets.ClientId = "891932610893-4ln4a8pt945r5v4flv4o6p75kksdcfu0.apps.googleusercontent.com";
 
 
-            clientSecrets.ClientSecret = "gNEByJItuQXsqb0YUtcHhmWO";
-            UserCredential credential = GoogleWebAuthorizationBroker.AuthorizeAsync(clientSecrets,scopes,"bgreer5050@gmail.com",System.Threading.CancellationToken.None,new FileDataStore("Calendar.VB.Sample")).Result;
+            //clientSecrets.ClientSecret = "gNEByJItuQXsqb0YUtcHhmWO";
+            clientSecrets.ClientSecret = "urn:ietf:wg:oauth:2.0:oob";
+            
+            UserCredential credential = GoogleWebAuthorizationBroker.AuthorizeAsync(clientSecrets,scopes,"lwnmusicboosters",System.Threading.CancellationToken.None,new FileDataStore("Calendar.VB.Sample")).Result;
 
 
             BaseClientService.Initializer initializer = new BaseClientService.Initializer();
@@ -45,7 +48,7 @@ namespace LWNMB.GoogleCalendarsAPI
 
         DisplayList(list);
 
-        //DisplayEvents(list);
+        //DisplayEvents(list);  
 
         }
 
@@ -63,12 +66,12 @@ namespace LWNMB.GoogleCalendarsAPI
             foreach(CalendarListEntry item in list)
             {
                 
-                if (item.Id == "bgreer5050@gmail.com")
+                if (item.Id == "lwnmusicboosters@gmail.com")
                 {
 
 
                     Events request = null;
-                    Google.Apis.Calendar.v3.EventsResource.ListRequest lr = serv.Events.List(("bgreer5050@gmail.com"));
+                    Google.Apis.Calendar.v3.EventsResource.ListRequest lr = serv.Events.List(("lwnmusicboosters@gmail.com"));
 
                     lr.TimeMin = DateTime.Now.AddDays(-5); //five days in the past
                     lr.TimeMax = DateTime.Now.AddDays(5); //five days in the future
