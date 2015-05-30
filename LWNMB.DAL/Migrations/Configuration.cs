@@ -65,6 +65,23 @@ namespace LWNMB.DAL.Migrations
 
                 );
 
+
+            context.FundRaisers.AddOrUpdate(
+                p => p.Name,
+                new FundRaiser { Name="Summer Car Wash", Description="" },
+                new FundRaiser { Name="Fish Fry", Description="" },
+                new FundRaiser { Name="Holiday Pie Sale", Description="" },
+                new FundRaiser { Name="Spiritwear", Description="" },
+                new FundRaiser { Name="Scrip Card Program", Description="" },
+                new FundRaiser { Name="Cheesecake Sale", Description="" },
+                new FundRaiser { Name="Evergreen Sale", Description="" },
+                new FundRaiser { Name="Fall Mum Sale", Description="" },
+                new FundRaiser { Name="Spring Flower Sale", Description="" },
+                new FundRaiser { Name="Princess Party", Description="" }
+
+                );
+
+
             context.SaveChanges();
             
             context.ChairPersons.AddOrUpdate(

@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3A2D53BC-BE16-4908-A8EA-08E9CA2FB957}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{8DE0D00C-8C68-4B81-8C65-7B81A1C63020}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LWNMB.Domain</RootNamespace>
-    <AssemblyName>LWNMB.Domain</AssemblyName>
+    <RootNamespace>DeleteLock</RootNamespace>
+    <AssemblyName>DeleteLock</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -39,27 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BoardMembers.cs" />
-    <Compile Include="ChairPerson.cs" />
-    <Compile Include="Event.cs" />
-    <Compile Include="Contracts\INavigation.cs" />
-    <Compile Include="Contracts\ISection.cs" />
-    <Compile Include="Contracts\IChairPerson.cs" />
-    <Compile Include="Contracts\IBoardMembers.cs" />
-    <Compile Include="Contracts\IBoardPosition.cs" />
-    <Compile Include="Contracts\IEvent.cs" />
-    <Compile Include="Contracts\IEventDate.cs" />
-    <Compile Include="Contracts\IVolunteer.cs" />
-    <Compile Include="Contracts\IVolunteerOppurtunity.cs" />
-    <Compile Include="Contracts\IWebsitePost.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Section.cs" />
-    <Compile Include="Volunteer.cs" />
-    <Compile Include="VolunteerOppurtunity.cs" />
-    <Compile Include="WebsitePost.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

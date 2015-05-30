@@ -1,4 +1,4 @@
-﻿@model IEnumerable<LWNMB.Domain.Event>
+﻿@model IEnumerable<LWNMB.Domain.FundRaiser>
 
 @{
     ViewBag.Title = "Index";
@@ -7,8 +7,11 @@
 
 
 
+<center>
+    <h2>Lincoln-Way North Music Booster Fundraisers</h2>
+</center>
 
-<table class="table table-striped">
+<table class="table table-striped table-condensed">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -17,19 +20,23 @@
         <th>
             @Html.DisplayNameFor(model => model.Description)
         </th>
+
+       
+
+
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Name)
+            <a href="#" @Html.DisplayFor(modelItem => item.Name) />
         </td>
         
         <td>
             @Html.DisplayFor(modelItem => item.Description)
         </td>
-       
+            
     </tr>
 }
 

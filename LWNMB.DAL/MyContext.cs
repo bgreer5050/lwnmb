@@ -28,6 +28,7 @@ namespace LWNMB.DAL
         public DbSet<ChairPerson> ChairPersons { get; set; }
         public DbSet<BoardMembers> BoardMembers { get; set; }
         public DbSet<BoardPosition> BoardPositions { get; set; }
+        public DbSet<FundRaiser> FundRaisers { get; set; }
 
     }
 

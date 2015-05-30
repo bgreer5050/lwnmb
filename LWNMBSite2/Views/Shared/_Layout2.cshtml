@@ -179,14 +179,20 @@
                     <div class="pull-right">
                         <a href="javascript:void(0);" class="sb-icon-navbar sb-toggle-right"><i class="fa fa-bars"></i></a>
                     </div>
+
+                <!--Main Navigation ****************************************************************************************-->
+                    <!--Main Navigation ****************************************************************************************-->
+                    <!--Main Navigation ****************************************************************************************-->
+                    <!--Main Navigation ****************************************************************************************-->
+
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="@Url.Action("Index","Home")" >Lincoln-Way North Music Boosters</a>
+                                <a href="@Url.Action("Index","Home")">Lincoln-Way North Music Boosters</a>
                             </li>
                             <li class="dropdown">
 
-                                <a href="/Calendars/Index" >Calendar</a>
+                                <a href="/Calendars/Index">Calendar</a>
                             </li>
 
                             <li>
@@ -196,28 +202,126 @@
 
                             <li class="dropdown">
                                 @*<a href="javascript:void(0);" data-toggle="dropdown">Fundraisers</a>*@
-                                <a href="/Fundraisers" data-toggle="dropdown">Fundraisers</a>
-
+                                <a href="/Fundraisers" class="dropdown-toggle" data-toggle="dropdown">Fundraisers</a>
+                                
                                 <ul class="dropdown-menu dropdown-menu-left">
                                     <li><a href="#">Events</a></li>
                                     <li><a href="#">Spiritwear</a></li>
                                     <li><a href="#">Scrip Cards</a></li>
                                     <li><a href="#">Siam <span class="label label-success pull-right">New</span></a></li>
-                                    
+
+                                    <li><a href="#">Summer Car Wash <span class="label label-success pull-right">New</span></a>
+                                    <li><a href="#">Intro Letter</a>
+                                    <li><a href="#">Pledge Sheet</a></li>
+                                    <li><a href="#">Thank You Slips</a></li>
+
+                        </ul>
+                            </li>
+
+
+
+
+
+                        <!--****************************************************************************************-->
+
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Fund Raisers</a>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Spiritwear</a></li>
+                                <li><a href="#">Scrip Cards</a></li>
+                                <li><a href="#">Siam <span class="label label-success pull-right">New</span></a></li>
+
+                                
+
+
+
+                                <li class="dropdown-submenu">
+                                    <a href="javascript:void(0);" class="has_children">Summer Car Wash<span class="label label-success pull-right">New</span></a>
+                                    <ul class="dropdown-menu dropdown-menu-left">
+                                        <li><a href="#">Intro Letter</a></li>
+                                        <li><a href="#">Pledge Sheet</a></li>
+                                        <li><a href="#">Thank You Slips</a></li>
+                                      
+                                    </ul>
+                                </li>
                                 </ul>
                             </li>
+                        <!--*******************************************************************************************-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                             <li class="dropdown">
                                 <a href="javascript:void(0);" data-toggle="dropdown">Activities</a>
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li><a href="#">Band</a></li>
+                                    <li><a href="#">Choir</a></li>
+                                    <li><a href="#">Jazz Ensemble</a></li>
+                                    <li><a href="#">Madrigals </a></li>
+                                    <li><a href="#">Marching Phoenix</a></li>
+                                    <li><a href="#">Musical</a></li>
+                                    <li><a href="#">Orchestra</a></li>
+                                    <li><a href="#">Percussion Ensemble</a></li>
+                                    <li><a href="#">Winterguard</a></li>
+                                    <li><a href="#">Youth Strings<span class="label label-success pull-right">New</span></a></li>
+
+                                </ul>
+
+
+
                             </li>
                             <li class="dropdown">
                                 <a href="javascript:void(0);" data-toggle="dropdown">Forms</a>
-                            </li>
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li> @Html.ActionLink("Booster Membership", "getPdf", "Document", new { filename = "BoosterMembershipForm.pdf" }, null)</li>
+                                    <li> @Html.ActionLink("IBA Transfer", "getPdf", "Document", new { filename = "IBATransfer.pdf" }, null)</li>
+                                    <li> @Html.ActionLink("Freshman Scheduling Options", "getPdf", "Document", new { filename = "Options.pdf" }, null)</li>
+                                    <li> @Html.ActionLink("Medical Authorization", "getPdf", "Document", new { filename = "MedAuthForm.pdf" }, null)</li>
+                                    <li> @Html.ActionLink("State of Illinois Physical", "getPdf", "Document", new { filename = "PhysicalForm.pdf" }, null)</li>
+                                    <li> @Html.ActionLink("Travel Release", "getPdf", "Document", new { filename = "TravelRelease.pdf" }, null)</li>
+                                    <li> @Html.ActionLink("Emergency Contact", "getPdf", "Document", new { filename = "EmergencyContactForm.pdf" }, null)</li>
+                                    <li> @Html.ActionLink("Credit Card Form", "getPdf", "Document", new { filename = "CreditCardForm.pdf" }, null)</li>
+                          
+
+                                    </ul>
+</li>
+
+
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" data-toggle="dropdown">More</a>
+                                <ul class="dropdown-menu dropdown-menu-left">
+
+                                    <li><a href="#">Booster Membership</a></li>
+                                    <li><a href="#">Executive Board</a></li>
+                                    <li><a href="#">Committees</a></li>
+                                    <li><a href="#">Constitution </a></li>
+                                    <li><a href="#">IBA Transfer</a></li>
+                                    <li><a href="#">Meetings</a></li>
+                                    <li><a href="#">Volunteer</a></li>                                   
+
+                                </ul>
 
 </ul>
-                               
                             
-                    </div><!-- navbar-collapse -->
+                    </div>
+                <!-- navbar-collapse -->
+                    <!--Main Navigation ****************************************************************************************-->
+                    <!--Main Navigation ****************************************************************************************-->
+                    <!--Main Navigation ****************************************************************************************-->
+
                 </div><!-- container -->
             </nav>
 
@@ -674,9 +778,8 @@
                                 <li><a href="blog.html">Calendar</a></li>
                                 <li><a href="portfolio_sidebar.html">Charms</a></li>
                                 <li><a href="portfolio_topvar.html">Fundraisers</a></li>
-                                <li><a href="page_timeline_left.html">Timeline</a></li>
-                                <li><a href="page_pricing.html">Activities</a></li>
-                                <li><a href="page_about2.html">Forms</a></li>
+                                <li><a href="portfolio_topvar.html">Test</a></li>
+
                                 @*<li><a href="page_team.html">Our Team</a></li>
                                 <li><a href="page_services.html">Services</a></li>
                                 <li><a href="page_support.html">FAQ</a></li>
@@ -758,12 +861,13 @@
         </div><!-- /input-group -->
 
         <h2 class="slidebar-header no-margin-bottom">Navigation</h2>
-        <ul class="slidebar-menu">
+        <ul class="slidebar-menu"> <!--Side Right Navigation-->
             <li><a href="#" class="active">LWN Music Boosters</a></li>
             <li><a href="#">Calendar</a></li>
             <li><a href="#">Charms</a></li>
             <li><a href="#">Fundraisers</a></li>
             <li><a href="#">Activities</a></li>
+            
             <li><a href="#">Forms</a></li>
 
         </ul>

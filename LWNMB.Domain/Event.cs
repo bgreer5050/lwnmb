@@ -27,4 +27,10 @@ namespace LWNMB.Domain
         public DateTime End { get; set; }
 
     }
+
+
+    public class FundRaiser : Event
+    {
+
+    }
 }

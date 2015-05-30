@@ -203,6 +203,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\CalendarsController.cs" />
+    <Compile Include="Controllers\DocumentController.cs" />
     <Compile Include="Controllers\FundraisingController.cs" />
     <Compile Include="Controllers\GeneticsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -755,6 +756,14 @@
     <Content Include="Content\Countdown\FlipClock-master\package.json" />
     <Content Include="Content\Countdown\FlipClock-master\README.md" />
     <Content Include="Content\Countdown\FlipClock-master\src\flipclock\css\flipclock.scss" />
+    <Content Include="Content\Documents\BoosterMembershipForm.pdf" />
+    <Content Include="Content\Documents\CreditCardForm.pdf" />
+    <Content Include="Content\Documents\EmergencyContactForm.pdf" />
+    <Content Include="Content\Documents\IBAtransfer.pdf" />
+    <Content Include="Content\Documents\MedAuthForm.pdf" />
+    <Content Include="Content\Documents\Options.pdf" />
+    <Content Include="Content\Documents\PhysicalForm.pdf" />
+    <Content Include="Content\Documents\TravelRelease.pdf" />
     <None Include="Properties\PublishProfiles\AzureSite.pubxml" />
     <None Include="Properties\PublishProfiles\lwnmusicboosters %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\lwnmusicboosters %283%29.pubxml" />
@@ -782,7 +791,9 @@
     <Content Include="Views\Home\OLDIndex.cshtml">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -828,10 +839,12 @@
     <Content Include="Views\Fundraising\Index.cshtml" />
     <Content Include="Views\Calendars\Test.cshtml" />
     <Content Include="Views\Genetics\Index.cshtml" />
+    <Content Include="Views\Fundraising\ScripCardProgram.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="img\demopage\" />
+    <Folder Include="Views\Document\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
