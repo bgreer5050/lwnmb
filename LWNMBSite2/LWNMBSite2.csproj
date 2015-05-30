@@ -201,6 +201,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ActivitiesController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\CalendarsController.cs" />
     <Compile Include="Controllers\DocumentController.cs" />
@@ -768,6 +769,14 @@
     <Content Include="Content\Documents\CarWashIntroLetter2015.pdf" />
     <Content Include="Content\Documents\PledgeSheet.pdf" />
     <Content Include="Content\Documents\ThankYouSlips2015.pdf" />
+    <Content Include="Content\Documents\LWN_ScripEarningExamples.pdf" />
+    <Content Include="Content\Documents\LWNMUSICBUCKS.pdf" />
+    <Content Include="Content\Documents\Scrip_Instructions.pdf" />
+    <Content Include="Content\Documents\ScripCardProcess.pdf" />
+    <Content Include="Content\Documents\Bands\Auditions.pdf" />
+    <Content Include="Content\Documents\Bands\BandSchedule2013.pdf" />
+    <Content Include="Content\Documents\Bands\SummitHillFuturePhoenixAuditionLetter2015.pdf" />
+    <Content Include="Content\Documents\Bands\syllabusWS-1.pdf" />
     <None Include="Properties\PublishProfiles\AzureSite.pubxml" />
     <None Include="Properties\PublishProfiles\lwnmusicboosters %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\lwnmusicboosters %283%29.pubxml" />
@@ -846,6 +855,16 @@
     <Content Include="Views\Fundraising\ScripCardProgram.cshtml" />
     <Content Include="Views\Fundraising\FundRaisingEvents.cshtml" />
     <Content Include="Views\Store\Index.cshtml" />
+    <Content Include="Views\Activities\Band.cshtml" />
+    <Content Include="Views\Activities\Choir.cshtml" />
+    <Content Include="Views\Activities\JazzEnsemble.cshtml" />
+    <Content Include="Views\Activities\Madrigals.cshtml" />
+    <Content Include="Views\Activities\MarchingPhoenix.cshtml" />
+    <Content Include="Views\Activities\Musical.cshtml" />
+    <Content Include="Views\Activities\Orchestra.cshtml" />
+    <Content Include="Views\Activities\PercussionEnsemble.cshtml" />
+    <Content Include="Views\Activities\Winterguard.cshtml" />
+    <Content Include="Views\Activities\YouthStrings.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

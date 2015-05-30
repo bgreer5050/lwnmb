@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Band";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<center>
+<h2>Bands</h2>
+
+
+
+    @Html.ActionLink("2015-16 Band Auditon Music", "getBandPdf", "Document", new { filename = "Auditions.pdf" },null)
+    <br />
+    @Html.ActionLink("Summit Hill Band Audition Information", "getBandPdf", "Document", new { filename = "SummitHillFuturePhoenixAuditionLetter2015.pdf" }, null)
+    <br />
+    
+    @Html.ActionLink("Weekly Band Schedule", "getBandPdf", "Document", new { filename = "BandSchedule2015.pdf" },null)
+    <br />
+
+    @Html.ActionLink("Syllabus", "getBandPdf", "Document", new { filename = "syllabusWS-1.pdf" },null)
+
+
+    </center>
+
+

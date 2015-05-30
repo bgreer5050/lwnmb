@@ -20,5 +20,11 @@ namespace LWNMBSite2.Controllers
             filename = @"~/Content/Documents/" + filename;
             return File(filename, "application/pdf");
         }
+
+        public ActionResult getBandPdf(string filename)
+        {
+            filename = @"~/Content/Documents/Bands/" + filename;
+            return File(filename, "application/pdf");
+        }
     }
 }

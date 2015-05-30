@@ -8,15 +8,21 @@
 <center>
 <h2>Scrip Card Program</h2>
 
-    <p>The Scrip card program allows you to earn money for your student's IBA account while at the same time making the normal purchases you would everyday.  For more information go to <a href="www.shopwithscrip.com"> www.shopwithscrip.com</a>.</p>
+    <p>The Scrip card program allows you to earn money for your student's IBA account while at the same time making the normal purchases you would everyday.  For more information go to <a href="http://shopwithscrip.com">www.shopwithscrip.com</a>.</p>
 
-        <p>If you need to create an account for shopwithscrip.com access please reference this document.</p>
+       
 
-        <p>This document will help explains the scrip ordering process now in place for the LWN Music Boosters..</p>
 
-        <p>Have a look at earning examples to help you plan how to make the best of the Scrip opportunity!</p>
+</center>
 
-        <p>Have a look at the user guide shown here to get full details on this fundraising opportunity.</p>
+<center>
 
+<p>@Html.ActionLink("If you need to create an account for shopwithscrip.com access please reference this document.", "getPdf", "Document", new { filename = "Scrip_Instructions.pdf" })</p>
+
+<p>@Html.ActionLink("This document will help explains the scrip ordering process now in place for the LWN Music Boosters..", "getPdf", "Document", new { filename = "ScripCardProcess.pdf" })</p>
+
+<p>@Html.ActionLink("Have a look at earning examples to help you plan how to make the best of the Scrip opportunity!", "getPdf", "Document", new { filename = "LWN_ScripEarningExamples.pdf" })</p>
+
+<p>@Html.ActionLink("Have a look at the user guide shown here to get full details on this fundraising opportunity.", "getPdf", "Document", new { filename = "LWNMUSICBUCKS.pdf" })</p>
 
 </center>
