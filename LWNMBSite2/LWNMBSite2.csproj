@@ -208,6 +208,7 @@
     <Compile Include="Controllers\GeneticsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -764,6 +765,9 @@
     <Content Include="Content\Documents\Options.pdf" />
     <Content Include="Content\Documents\PhysicalForm.pdf" />
     <Content Include="Content\Documents\TravelRelease.pdf" />
+    <Content Include="Content\Documents\CarWashIntroLetter2015.pdf" />
+    <Content Include="Content\Documents\PledgeSheet.pdf" />
+    <Content Include="Content\Documents\ThankYouSlips2015.pdf" />
     <None Include="Properties\PublishProfiles\AzureSite.pubxml" />
     <None Include="Properties\PublishProfiles\lwnmusicboosters %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\lwnmusicboosters %283%29.pubxml" />
@@ -840,6 +844,8 @@
     <Content Include="Views\Calendars\Test.cshtml" />
     <Content Include="Views\Genetics\Index.cshtml" />
     <Content Include="Views\Fundraising\ScripCardProgram.cshtml" />
+    <Content Include="Views\Fundraising\FundRaisingEvents.cshtml" />
+    <Content Include="Views\Store\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

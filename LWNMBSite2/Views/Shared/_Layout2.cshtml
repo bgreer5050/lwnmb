@@ -200,23 +200,7 @@
                                 <a href="https://www.charmsoffice.com/charms/parents.asp">Charms</a>
                             </li>
 
-                            <li class="dropdown">
-                                @*<a href="javascript:void(0);" data-toggle="dropdown">Fundraisers</a>*@
-                                <a href="/Fundraisers" class="dropdown-toggle" data-toggle="dropdown">Fundraisers</a>
-                                
-                                <ul class="dropdown-menu dropdown-menu-left">
-                                    <li><a href="#">Events</a></li>
-                                    <li><a href="#">Spiritwear</a></li>
-                                    <li><a href="#">Scrip Cards</a></li>
-                                    <li><a href="#">Siam <span class="label label-success pull-right">New</span></a></li>
-
-                                    <li><a href="#">Summer Car Wash <span class="label label-success pull-right">New</span></a>
-                                    <li><a href="#">Intro Letter</a>
-                                    <li><a href="#">Pledge Sheet</a></li>
-                                    <li><a href="#">Thank You Slips</a></li>
-
-                        </ul>
-                            </li>
+                          
 
 
 
@@ -228,7 +212,9 @@
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Fund Raisers</a>
                             <ul class="dropdown-menu dropdown-menu-left">
                                 
-                                <li><a href="#">Events</a></li>
+                                <li>@Html.ActionLink("Events","FundRaisingEvents","FundRaising")</li>
+                                <li>@Html.ActionLink("Spiritwear","Index","Store")</li>
+                                
                                 <li><a href="#">Spiritwear</a></li>
                                 <li><a href="#">Scrip Cards</a></li>
                                 <li><a href="#">Siam <span class="label label-success pull-right">New</span></a></li>
@@ -240,10 +226,16 @@
                                 <li class="dropdown-submenu">
                                     <a href="javascript:void(0);" class="has_children">Summer Car Wash<span class="label label-success pull-right">New</span></a>
                                     <ul class="dropdown-menu dropdown-menu-left">
-                                        <li><a href="#">Intro Letter</a></li>
+                                        @*<li><a href="#">Intro Letter</a></li>
                                         <li><a href="#">Pledge Sheet</a></li>
-                                        <li><a href="#">Thank You Slips</a></li>
+                                        <li><a href="#">Thank You Slips</a></li>*@
                                       
+                                        <li> @Html.ActionLink("Intro Letter", "getPdf", "Document", new { filename = "CarWashIntroLetter2015.pdf" }, null)</li>
+                                        <li> @Html.ActionLink("Pledge Sheet", "getPdf", "Document", new { filename = "PledgeSheet.pdf" }, null)</li>
+                                        <li> @Html.ActionLink("Thank You Slip", "getPdf", "Document", new { filename = "ThankYouSlips.pdf" }, null)</li>
+
+
+
                                     </ul>
                                 </li>
                                 </ul>
