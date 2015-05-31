@@ -15,8 +15,13 @@ namespace LWNMBSite2.Controllers
             return View();
         }
 
+         public ActionResult MobileCalendar()
+        {
+            return View();
+        }
 
 
+      
 
         public ActionResult Test()
         {

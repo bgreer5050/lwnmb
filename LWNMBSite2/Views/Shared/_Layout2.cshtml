@@ -187,9 +187,32 @@
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
+                        
                             <li>
-                                <a href="@Url.Action("Index","Home")">Lincoln-Way North Music Boosters</a>
+                                <a href="@Url.Action("Index","Home")" >Home</a>
+
                             </li>
+                            <li class="dropdown">
+                                <a href="@Url.Action("Index","Home")" data-toggle="dropdown">About The Boosters</a>
+                                @*<a href="@Url.Action("Index","Home")">Lincoln-Way North Music Boosters</a>*@
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li> @Html.ActionLink("Booster Membership","Membership","Boosters") </li>
+                                    <li> @Html.ActionLink("Executive Board","ExecutiveBoard","Boosters") </li>
+
+                                    <li> @Html.ActionLink("Committees","Committees","Boosters") </li>
+                                    <li> @Html.ActionLink("Constitution","Constitution","Boosters") </li>
+
+
+                                    <li><a href="#">Constitution </a></li>
+                                    <li><a href="#">IBA Transfer</a></li>
+                                    <li><a href="#">Meetings</a></li>
+                                    <li><a href="#">Volunteer</a></li>
+
+                                </ul>
+
+
+                            </li>
+                            
                             <li class="dropdown">
 
                                 <a href="/Calendars/Index">Calendar</a>
@@ -295,22 +318,7 @@
 </li>
 
 
-                            <li class="dropdown">
-                                <a href="javascript:void(0);" data-toggle="dropdown">More</a>
-                                <ul class="dropdown-menu dropdown-menu-left">
-                                   <li> @Html.ActionLink("Booster Membership","Membership","Boosters") </li>
-                                    <li> @Html.ActionLink("Executive Board","ExecutiveBoard","Boosters") </li>
-
-                                    <li> @Html.ActionLink("Committees","Committees","Boosters") </li>
-                                    <li> @Html.ActionLink("Constitution","Constitution","Boosters") </li>
-
-                                  
-                                    <li><a href="#">Constitution </a></li>
-                                    <li><a href="#">IBA Transfer</a></li>
-                                    <li><a href="#">Meetings</a></li>
-                                    <li><a href="#">Volunteer</a></li>                                   
-
-                                </ul>
+                            
 
 </ul>
                             
@@ -766,7 +774,7 @@
         <h2 class="slidebar-header no-margin-bottom">Navigation</h2>
         <ul class="slidebar-menu"> <!--Side Right Navigation-->
             <li><a href="#" class="active">LWN Music Boosters</a></li>
-            <li><a href="#">Calendar</a></li>
+            <li>@Html.ActionLink("Calendar","MobileCalendar","Calendars")</li>
             <li><a href="#">Charms</a></li>
             <li><a href="#">Fundraisers</a></li>
             <li><a href="#">Activities</a></li>

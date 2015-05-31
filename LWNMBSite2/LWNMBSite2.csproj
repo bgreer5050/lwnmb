@@ -877,6 +877,7 @@
     <Content Include="Views\Boosters\IBATransfer.cshtml" />
     <Content Include="Views\Boosters\Meetings.cshtml" />
     <Content Include="Views\Boosters\Volunteer.cshtml" />
+    <Content Include="Views\Calendars\MobileCalendar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
