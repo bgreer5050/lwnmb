@@ -867,6 +867,7 @@
     <Content Include="Views\Activities\Winterguard.cshtml" />
     <Content Include="Views\Activities\YouthStrings.cshtml" />
     <Content Include="Views\Boosters\Membership.cshtml" />
+    <Content Include="Views\Shared\Posters.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

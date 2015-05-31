@@ -11,7 +11,7 @@ namespace LWNMBSite2.Controllers
     {
         public ActionResult Index()
         {
-            
+            ViewBag.showPosters = false;
            
             return View();
         }
