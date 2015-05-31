@@ -321,6 +321,8 @@
     <Content Include="Content\Images\Madrigals.png" />
     <Content Include="Content\Images\Madrigals2.png" />
     <Content Include="Content\Images\MarchingPhoenix.jpg" />
+    <Content Include="Content\Images\MilesForMusic.JPG" />
+    <Content Include="Content\Images\Orchestra.JPG" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap-switch.min.css" />
     <Content Include="css\bootstrap.min.css" />
