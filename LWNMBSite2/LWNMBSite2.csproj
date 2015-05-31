@@ -203,6 +203,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ActivitiesController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\BoostersController.cs" />
     <Compile Include="Controllers\CalendarsController.cs" />
     <Compile Include="Controllers\DocumentController.cs" />
     <Compile Include="Controllers\FundraisingController.cs" />
@@ -865,6 +866,7 @@
     <Content Include="Views\Activities\PercussionEnsemble.cshtml" />
     <Content Include="Views\Activities\Winterguard.cshtml" />
     <Content Include="Views\Activities\YouthStrings.cshtml" />
+    <Content Include="Views\Boosters\Membership.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
