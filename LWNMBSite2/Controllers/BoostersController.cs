@@ -24,7 +24,7 @@ namespace LWNMBSite2.Controllers
             return View();
         }
 
-        public ActionResult Committes()
+        public ActionResult Committees()
         {
             return View();
         }

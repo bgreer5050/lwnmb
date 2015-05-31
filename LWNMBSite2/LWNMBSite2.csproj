@@ -778,6 +778,7 @@
     <Content Include="Content\Documents\Bands\BandSchedule2013.pdf" />
     <Content Include="Content\Documents\Bands\SummitHillFuturePhoenixAuditionLetter2015.pdf" />
     <Content Include="Content\Documents\Bands\syllabusWS-1.pdf" />
+    <Content Include="Content\Documents\Boosters\LWNMusicConstitution.pdf" />
     <None Include="Properties\PublishProfiles\AzureSite.pubxml" />
     <None Include="Properties\PublishProfiles\lwnmusicboosters %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\lwnmusicboosters %283%29.pubxml" />
@@ -868,6 +869,12 @@
     <Content Include="Views\Activities\YouthStrings.cshtml" />
     <Content Include="Views\Boosters\Membership.cshtml" />
     <Content Include="Views\Shared\Posters.cshtml" />
+    <Content Include="Views\Boosters\ExecutiveBoard.cshtml" />
+    <Content Include="Views\Boosters\Committees.cshtml" />
+    <Content Include="Views\Boosters\Constitution.cshtml" />
+    <Content Include="Views\Boosters\IBATransfer.cshtml" />
+    <Content Include="Views\Boosters\Meetings.cshtml" />
+    <Content Include="Views\Boosters\Volunteer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -106,7 +106,7 @@
                 <div class="container">
                     <div class="header-full-title">
                         <h1 class="animated fadeInRight"><a href="index.html" class="active">Lincoln-Way North <span>Music Boosters</span></a></h1>
-                        <p class="animated fadeInRight">Making Music Possible For All</p>
+                        <p class="animated fadeInRight"><i>“Have faith in every step you take – just keep marching on.”</i></p>
                     </div>
                     <nav class="top-nav">
                         <ul class="top-nav-social hidden-sm">
@@ -298,10 +298,13 @@
                             <li class="dropdown">
                                 <a href="javascript:void(0);" data-toggle="dropdown">More</a>
                                 <ul class="dropdown-menu dropdown-menu-left">
+                                   <li> @Html.ActionLink("Booster Membership","Membership","Boosters") </li>
+                                    <li> @Html.ActionLink("Executive Board","ExecutiveBoard","Boosters") </li>
 
-                                    <li><a href="#">Booster Membership</a></li>
-                                    <li><a href="#">Executive Board</a></li>
-                                    <li><a href="#">Committees</a></li>
+                                    <li> @Html.ActionLink("Committees","Committees","Boosters") </li>
+                                    <li> @Html.ActionLink("Constitution","Constitution","Boosters") </li>
+
+                                  
                                     <li><a href="#">Constitution </a></li>
                                     <li><a href="#">IBA Transfer</a></li>
                                     <li><a href="#">Meetings</a></li>
@@ -426,7 +429,7 @@
         @RenderBody()
         @*xxxxxxxxxxxxxxxxxxx*@
         
-            <div id="newTicker">
+            @*<div id="newTicker">
                 <div id="example" style="height:26px;overflow:hidden">
                     <ul>
                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</li>
@@ -435,14 +438,14 @@
                     </ul>
                 </div>
 
-            </div>
+            </div>*@
             <section class="section-lines">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
                             
                         </div>
-                        <div class="col-md-8">
+                        @*<div class="col-md-8">
                             <div class="tab-content">
                                 <div class="tab-pane active" id="desktop">
                                     <img src="/img/demo/mac.png" alt="" class="img-responsive">
@@ -457,14 +460,13 @@
                                     <img src="/img/demo/iphone.png" alt="" class="img-responsive">
                                 </div>
                             </div>
-                        </div>
+                        </div>*@
                     </div>
                 </div>
             </section>
 
             <div class="container">
                 <section class="margin-bottom">
-                    <p class="lead lead-lg text-center primary-color margin-bottom">Knows the <strong>Artificial Reason</strong> and surprise yourself</p>
                     <div class="row">
                         <div class="col-md-6">
                             <h2 class="no-margin-top">About us</h2>
@@ -476,7 +478,7 @@
 
                         </div>
                         <div class="col-md-6">
-                            <div class="panel-group" id="accordion">
+                            @*<div class="panel-group" id="accordion">
                                 <div class="panel panel-default">
                                     <div class="panel-heading panel-heading-link">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
@@ -516,7 +518,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>*@
                         </div>
 
 
@@ -665,58 +667,7 @@
                     </ul>
                 </section>
 
-                <section>
-                    <p class="slogan text-center">Discover our projects and the rigorous process of <span>creation</span>. Our principles are <span>creativity</span>, <span>design</span>, <span>experience</span> and <span>knowledge</span>. We are backed by 20 years of <span>research</span>.</p>
-                    <h2 class="section-title">Our Clients</h2>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="bxslider-controls">
-                                <span id="bx-prev5"></span>
-                                <span id="bx-next5"></span>
-                            </div>
-                            <ul class="bxslider" id="home-block">
-                                <li>
-                                    <blockquote class="blockquote-color">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                        <footer>Brian Krzanich, Intel CEO</footer>
-                                    </blockquote>
-                                </li>
-                                <li>
-                                    <blockquote class="blockquote-color">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                        <footer>Brian Krzanich, Intel CEO</footer>
-                                    </blockquote>
-                                </li>
-                                <li>
-                                    <blockquote class="blockquote-color">
-                                        <p>Dolore totam at ea reiciendis suscipit a tempore cum nisi aspernatur nisi alias posuere erat a ante posuere erat a ante ultricies ultricies nisi vel augue quam semper conse erat quuntur.</p>
-                                        <footer>Sheldon Cooper, Physical Quantum</footer>
-                                    </blockquote>
-                                </li>
-                                <li>
-                                    <blockquote class="blockquote-color">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                                        <footer>Brian Krzanich, Intel CEO</footer>
-                                    </blockquote>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-3 col-sm-3 col-xs-6"><img src="/img/demo/intel.png" alt="" class="img-responsive"></div>
-                                <div class="col-md-3 col-sm-3 col-xs-6"><img src="/img/demo/microsoft.png" alt="" class="img-responsive"></div>
-                                <div class="col-md-3 col-sm-3 col-xs-6"><img src="/img/demo/nokia.png" alt="" class="img-responsive"></div>
-                                <div class="col-md-3 col-sm-3 col-xs-6"><img src="/img/demo/samsung.png" alt="" class="img-responsive"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3 col-sm-3 col-xs-6"><img src="/img/demo/anz.png" alt="" class="img-responsive"></div>
-                                <div class="col-md-3 col-sm-3 col-xs-6"><img src="/img/demo/maxis.png" alt="" class="img-responsive"></div>
-                                <div class="col-md-3 col-sm-3 col-xs-6"><img src="/img/demo/sony.png" alt="" class="img-responsive"></div>
-                                <div class="col-md-3 col-sm-3 col-xs-6"><img src="/img/demo/hp.png" alt="" class="img-responsive"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+             
 
             </div>
 
