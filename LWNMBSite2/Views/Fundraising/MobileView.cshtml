@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "MobileView";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<style>
+    ul
+{
+    list-style-type: none;
+}
+</style>
+
+
+<center>
+<h2>Fundraisers Mobile View</h2>
+<ul>
+<li>@Html.ActionLink("Events","FundRaisingEvents","Fundraising")</li>
+    <li>@Html.ActionLink("Spiritwear", "Index", "Store")</li>
+    <li>@Html.ActionLink("Scip Cards", "ScripCardProgram", "Fundraising")</li>
+
+<li>SIAM</li>
+    <li>@Html.ActionLink("Summer Car Wash", "SummerCarWash", "Fundraising")</li>
+
+    </ul>
+
+</center>

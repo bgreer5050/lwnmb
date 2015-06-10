@@ -608,9 +608,13 @@
     <Content Include="img\demo\w10.jpg" />
     <Content Include="img\demo\w11.jpg" />
     <Content Include="img\demo\w12.jpg" />
+    <Content Include="img\demo\w1a.jpg" />
     <Content Include="img\demo\w2.jpg" />
+    <Content Include="img\demo\w2a.JPG" />
     <Content Include="img\demo\w3.jpg" />
+    <Content Include="img\demo\w3a.JPG" />
     <Content Include="img\demo\w4.jpg" />
+    <Content Include="img\demo\w4a.JPG" />
     <Content Include="img\demo\w5.jpg" />
     <Content Include="img\demo\w6.jpg" />
     <Content Include="img\demo\w7.jpg" />
@@ -791,6 +795,7 @@
     <None Include="Properties\PublishProfiles\lwnmusicboosters %288%29.pubxml" />
     <None Include="Properties\PublishProfiles\lwnmusicboosters.pubxml" />
     <None Include="Properties\PublishProfiles\main.pubxml" />
+    <None Include="Properties\PublishProfiles\OneDrive.pubxml" />
     <None Include="Properties\PublishProfiles\Test08.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -878,6 +883,8 @@
     <Content Include="Views\Boosters\Meetings.cshtml" />
     <Content Include="Views\Boosters\Volunteer.cshtml" />
     <Content Include="Views\Calendars\MobileCalendar.cshtml" />
+    <Content Include="Views\Fundraising\MobileView.cshtml" />
+    <Content Include="Views\Fundraising\SummerCarWash.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

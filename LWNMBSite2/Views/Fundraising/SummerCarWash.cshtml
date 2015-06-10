@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "SummerCarWash";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<style>
+    li{
+         list-style-type: none;
+         font-size:18px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+</style>
+
+<center>
+<h1>Summer Car Wash</h1>
+
+
+
+<li> @Html.ActionLink("Intro Letter", "getPdf", "Document", new { filename = "CarWashIntroLetter2015.pdf" }, null)</li>
+<li> @Html.ActionLink("Pledge Sheet", "getPdf", "Document", new { filename = "PledgeSheet.pdf" }, null)</li>
+<li> @Html.ActionLink("Thank You Slip", "getPdf", "Document", new { filename = "ThankYouSlips.pdf" }, null)</li>
+
+    </center>
+

@@ -25,11 +25,22 @@ namespace LWNMBSite2.Controllers
             return View();
         }
 
+        public ActionResult SummerCarWash()
+        {
+            return View();
+        }
+
 
         public ActionResult FundRaisingEvents()
         {
             return View();
         }
+
+        public ActionResult MobileView()
+        {
+            return View();
+        }
+
 
     }
 }
