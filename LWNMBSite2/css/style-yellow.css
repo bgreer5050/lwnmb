@@ -3991,7 +3991,8 @@ input.input-lg[type="text"] {
 }
 .slidebar-menu li a {
   display: block;
-  color: #ddd;
+  color: white;
+  font-weight:bold;
   padding: 10px 20px;
   border-bottom: solid 1px #2f2f2f;
   text-decoration: none;
