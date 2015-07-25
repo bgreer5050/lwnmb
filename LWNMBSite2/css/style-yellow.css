@@ -13,6 +13,10 @@
 /* ---------------------------------------------------- */
 /* Animations Delay */
 /* ---------------------------------------------------- */
+
+.container{
+    background-color:black;
+}
 .animation-delay-1 {
   -webkit-animation-delay: .1s !important;
   -moz-animation-delay: .1s !important;
@@ -982,7 +986,8 @@ h6 {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   line-height: 120%;
-  color: #f6dc00;
+  /*color: #f6dc00;*/
+  color: #FFDA3C;
   margin: 20px 0 17px 0;
 }
 h1 {
@@ -2134,11 +2139,14 @@ hr.double {
   margin-bottom: 5px;
 }
 .content-box.box-default {
-  background-color: #f6f6f6;
+  /*background-color: #f6f6f6;*/
+  background-color:black;
   border: solid 1px #e5e5e5;
 }
 .content-box.box-default:hover {
-  background-color: #f3f3f3;
+  /*background-color: #f3f3f3;*/
+  background-color: black;
+
 }
 .content-box.box-primary .content-box-title,
 .content-box.box-info .content-box-title,
@@ -2146,7 +2154,8 @@ hr.double {
 .content-box.box-warning .content-box-title,
 .content-box.box-danger .content-box-title,
 .content-box.box-royal .content-box-title {
-  color: #fff;
+  /*color: #fff;*/
+  color:black;
 }
 .content-box.box-primary {
   background-color: #f6dc00;
@@ -3613,7 +3622,7 @@ a.thumbnail.active {
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-brand {
-    font-size: 1.7em;
+    font-size: 1.1em;
     word-spacing: -4px;
     margin-left: 60px;
   }
@@ -6104,7 +6113,8 @@ a.feature-icon:hover {
 }
 .header-full-title h1 span,
 .header-full-title h1 span a {
-  color: #f6dc00;
+  /*color: #f6dc00;*/
+  color:#FFDA3C;
 }
 .header-full-title p {
   margin-bottom: 15px;
@@ -6365,7 +6375,7 @@ a.feature-icon:hover {
 }
 /* Navbar Dark */
 .navbar-dark {
-  background-color: #444;
+  /*background-color: #444;*/
   background-image: none;
   color: #fff;
   box-shadow: none;

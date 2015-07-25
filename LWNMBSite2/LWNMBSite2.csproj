@@ -606,8 +606,11 @@
     <Content Include="img\demo\thumb-6.jpg" />
     <Content Include="img\demo\w1.jpg" />
     <Content Include="img\demo\w10.jpg" />
+    <Content Include="img\demo\w10a.JPG" />
     <Content Include="img\demo\w11.jpg" />
+    <Content Include="img\demo\w11a.JPG" />
     <Content Include="img\demo\w12.jpg" />
+    <Content Include="img\demo\w12a.JPG" />
     <Content Include="img\demo\w1a.jpg" />
     <Content Include="img\demo\w2.jpg" />
     <Content Include="img\demo\w2a.JPG" />
@@ -616,10 +619,15 @@
     <Content Include="img\demo\w4.jpg" />
     <Content Include="img\demo\w4a.JPG" />
     <Content Include="img\demo\w5.jpg" />
+    <Content Include="img\demo\w5a.JPG" />
     <Content Include="img\demo\w6.jpg" />
+    <Content Include="img\demo\w6a.JPG" />
     <Content Include="img\demo\w7.jpg" />
+    <Content Include="img\demo\w7a.JPG" />
     <Content Include="img\demo\w8.jpg" />
+    <Content Include="img\demo\w8a.JPG" />
     <Content Include="img\demo\w9.jpg" />
+    <Content Include="img\demo\w9a.JPG" />
     <Content Include="img\demo\wf1.jpg" />
     <Content Include="img\demo\wf2.jpg" />
     <Content Include="img\demo\wf3.jpg" />
